@@ -1,0 +1,27 @@
+{
+  "name": "endie",
+  "version": "1.0.0",
+  "description": "Some stuffs and a little bit of me.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/theendie/endie.git"
+  },
+  "author": "Andressa Cruz",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/theendie/endie/issues"
+  },
+  "homepage": "https://github.com/theendie/endie#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "20.2.0",
+    "npm": "9.7.1"
+  }
+}
