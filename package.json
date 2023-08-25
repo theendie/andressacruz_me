@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/theendie/endie/issues"
   },
-  "homepage": "https://github.com/theendie/endie#readme",
+  "homepage": "http://andressacruz.com",
   "dependencies": {
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
