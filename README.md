@@ -8,3 +8,6 @@ npm
 
 
 # Init
+  npm run build
+
+  npm run start
