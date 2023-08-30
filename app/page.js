@@ -14,6 +14,8 @@ export default function Home() {
           Não acredito que consigamos separar totalmente o lado pessoal do profissional,
           já que somos um ser só, e nós somos muito mais do que podemos imaginar.
           Logo, verás aqui um pouco da Endi desenvolvedora, tecnologista, gamer, também aspirante à filósofa e artesã.
+          <br />
+          Este é um espaço em construção, feito com afeto e, infelizmente/felizmente, pouco tempo disponível. Qualquer feedback será sempre aceito como um presente em andressacruzn@gmail.com.
         </p>
 
         <p className={styles.presentation}>

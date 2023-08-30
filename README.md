@@ -8,6 +8,7 @@ npm
 # Next Ideas
 - Improave pyramid tests
 - Work with Marketdown to post things
+- Add pt-br/en option
 
 # Init
   npm run build
