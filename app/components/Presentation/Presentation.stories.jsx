@@ -14,7 +14,10 @@ function Presentation({ primary, lang, label }) {
 
       <p className={styles.presentation}>
         {media.links.map((value) => {
-          <><a href={value.url} className={styles.link} target="_blank" rel="noopener noreferrer">{value.media}</a><br /></>
+          return <>
+              <a href={value.url} className={styles.link} target="_blank" rel="noopener noreferrer">{value.media}</a>
+              <br />
+            </>
         })}
       </p>
     </div>
