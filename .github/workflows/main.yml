@@ -11,7 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.8.9 # This is the action
-        env:
+        with:
+          secrets: inherit
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: ${{ secrets.HEROKUAAPP }} #Must be unique in Heroku
           heroku_email: ${{ secrets.EMAIL }}
