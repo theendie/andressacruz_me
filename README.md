@@ -6,6 +6,7 @@ nodejs
 npm
 
 # Next Ideas
+- Add New Relic
 - Improave pyramid tests
 - Work with Marketdown to post things
 - Add pt-br/en option
