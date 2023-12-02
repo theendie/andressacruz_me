@@ -2,14 +2,17 @@ name: Deploy Staging
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: |
+          git config --global user.email "andressacruzn@gmail.com"
+          git config --global user.name "Andressa Cruz"
+          git add -A
       - uses: akhileshns/heroku-deploy@v3.12.14 # This is the action
         with:
           secrets: inherit
@@ -17,4 +20,5 @@ jobs:
           heroku_app_name: ${{ secrets.HEROKUAAPP }} #Must be unique in Heroku
           heroku_email: ${{ secrets.EMAIL }}
           # usedocker: true
-          # healthcheck: "https://.herokuapp.com/health"
+          healthcheck: "https://endie-staging-b4b8fbb2224a.herokuapp.com/"
+          env_file: ".env"
