@@ -11,8 +11,8 @@
     "test": "jest --watch",
     "test:integration": "jest --watch",
     "test:e2e": "cypress open",
-    "storybook": "storybook dev -p 6006 -s src/components",
-    "build-storybook": "storybook build -s src/components"
+    "storybook": "storybook dev -p 6006 -s app/components",
+    "build-storybook": "storybook build -s app/components"
   },
   "repository": {
     "type": "git",
