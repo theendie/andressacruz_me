@@ -4,9 +4,9 @@
   "description": "Some stuffs and a little bit of me.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='-r @newrelic/next' next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_OPTIONS='-r @newrelic/next' next start",
     "lint": "next lint",
     "test": "jest",
     "storybook": "storybook dev -p 6006 -s app/components",
@@ -26,8 +26,10 @@
   },
   "homepage": "http://andressacruz.com",
   "dependencies": {
+    "@newrelic/next": "^0.7.0",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
+    "newrelic": "^11.6.0",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
