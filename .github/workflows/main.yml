@@ -19,4 +19,4 @@ jobs:
           heroku_app_name: ${{ secrets.HEROKUAAPP_STAGING }} #Must be unique in Heroku
           heroku_email: ${{ secrets.EMAIL }}
           # usedocker: true
-          healthcheck: "https://endie-staging-b4b8fbb2224a.herokuapp.com/"
+          healthcheck: "https://andressacruz-staging-287e09477145.herokuapp.com/"
