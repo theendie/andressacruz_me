@@ -1,5 +1,5 @@
 {
-  "name": "endie",
+  "name": "andressacruz_me",
   "version": "1.0.0",
   "description": "Some stuffs and a little bit of me.",
   "main": "index.js",
@@ -57,6 +57,6 @@
     "jest-environment-jsdom": "^29.7.0",
     "testing-library": "^0.0.2"
   },
-  "readme": "ERROR: No README data found!",
-  "_id": "endie@1.0.0"
+  "readme": "README.md",
+  "_id": "andressacruzn_me@1.0.0"
 }
