@@ -1,0 +1,13 @@
+.menu {
+  position: absolute;
+  left: 1.5rem;
+  color: #050505;
+}
+
+.menuList {
+  list-style-type:none;
+}
+
+.menuSocialMedia {
+  padding-right: 0.5rem;
+}

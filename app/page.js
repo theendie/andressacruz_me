@@ -2,31 +2,41 @@
 
 import Page from './components/Page/Page.stories'
 import Lang from './components/Lang/Lang.stories'
-import language from './language.json'
-import { useEffect, useState } from "react";
+import Menu from './components/Menu/Menu.stories'
+import BoxContent from './components/BoxContent/BoxContent.stories'
+
+import { useState } from "react";
 
 export default function Home() {
 
   const [language, setLanguage] = useState('pt-br');
 
-  // useEffect(() => {    
-  //   // Atualiza o título do documento usando a API do browser    
-  //   document.title = `Você clicou ${count} vezes`;  
-  // });
-    
+  const [isVisible, setIsVisible] = useState(false);
+
   const handleLanguage = (langValue) => {
     setLanguage(langValue);
+  }
+
+  const handleVisibility = () => {
+    console.log(!isVisible);
+    setIsVisible(!isVisible);
   }
 
   return (
     <main>
       <Page.component>
-        AQUI: {language}
         <Lang.component onSelectLanguage={handleLanguage} />
-        {/* <Menu /> */}
+        <Menu.component
+          lang={language}
+          onClickStatus={handleVisibility} />
+        <BoxContent.component visible={isVisible}/>
+        {/* <div
+    style={{ visibility: visibility ? "visible" : "hidden" }}
+    className={style.box}
+  > AQUI </div> */}
         {/* <Content> */}
-          {/* <Post></Post> */}
-          {/* <Post></Post> */}
+        {/* <Post></Post> */}
+        {/* <Post></Post> */}
         {/* </Content> */}
       </Page.component>
     </main>

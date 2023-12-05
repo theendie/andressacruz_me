@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1001",
+    "media": "instagram",
+    "href":  "https://www.instagram.com/enddefim/",
+    "alt": "Instagram icon",
+    "icon": "/instagram.png"
+  },
+  {
+    "id": "1002",
+    "media": "github",
+    "href":  "https://github.com/theendie/",
+    "alt": "Github icon",
+    "icon": "/github.png"
+  },
+  {
+    "id": "1003",
+    "media": "steam",
+    "href":  "https://steamcommunity.com/id/the_endi/",
+    "alt": "Steam icon",
+    "icon": "/steam.png"
+  }
+]
